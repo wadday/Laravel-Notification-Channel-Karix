@@ -1,4 +1,4 @@
-# Karix Sms notifications channel for Laravel 5.4+
+# Karix Sms notifications channel for Laravel 7
 
 [![Build Status](https://travis-ci.org/s-sarthak/Laravel-Notification-Channel-Karix.svg?branch=master)](https://travis-ci.org/s-sarthak/Laravel-Notification-Channel-Karix)
 [![StyleCI](https://github.styleci.io/repos/143913511/shield?branch=master)](https://github.styleci.io/repos/143913511)
