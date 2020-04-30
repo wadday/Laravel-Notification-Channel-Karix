@@ -5,14 +5,13 @@
 [![GitHub license](https://img.shields.io/github/license/s-sarthak/Laravel-Notification-Channel-Karix.svg)](https://github.com/s-sarthak/Laravel-Notification-Channel-Karix/blob/master/LICENSE.md)
 [![GitHub stars](https://img.shields.io/github/stars/s-sarthak/Laravel-Notification-Channel-Karix.svg)](https://github.com/s-sarthak/Laravel-Notification-Channel-Karix/stargazers)
 
-
-
-This package makes it easy to send sms via [Karix.io](karix.io) with Laravel 5.4+.
+This package makes it easy to send sms via [Karix.io](karix.io) with Laravel 7.
 
 ## Installation
 
 You can install the package via composer:
-``` bash
+
+```bash
 composer require bitfumes/karix-notification-channel
 ```
 
@@ -35,7 +34,7 @@ add your Karix Id and Token to your `config/services.php`:
 
 Now you can use the channel in your `via()` method inside the notification:
 
-``` php
+```php
 use Bitfumes\KarixNotificationChannel\KarixChannel;
 use Bitfumes\KarixNotificationChannel\KarixMessage;
 use Illuminate\Notifications\Notification;
@@ -55,7 +54,6 @@ class YourNotification extends Notification
     }
 }
 ```
-
 
 In order to let your Notification know that there is a new channel called KarixSmsChannel, add the `routeNotificationForKarix` method to your Notifiable model (probably your user.php file).
 
@@ -77,7 +75,7 @@ public function routeNotificationForKarix()
 
 ## Testing
 
-``` bash
+```bash
 $ composer test
 ```
 
